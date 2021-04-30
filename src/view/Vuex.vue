@@ -1,8 +1,8 @@
 <template>
     <div>
         <p>this is vuex</p>
-        <button @click="godetail('/Vuex')">vuex</button>
-        <button @click="godetail('/')">Home</button>
+        	<van-button @click="godetail('/Vuex')" style="margin-right:10px;" type="primary">vuex</van-button>
+					<van-button @click="godetail('/')" type="primary">Home</van-button>
     </div>
 </template>
 
@@ -13,7 +13,7 @@ import {useRouter} from "vue-router"
 export default defineComponent({
   name: 'vuex',
   props: {
-   
+
   },
   setup: () => {
     const router = useRouter();
